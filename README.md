@@ -131,50 +131,50 @@ endmodule
 ```
 ## OUTPUT:
 ## Logic Gates
-### or gate
+### Or gate
 ![WhatsApp Image 2024-03-16 at 2 29 56 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/36d284bf-34f7-4e8a-9ca0-49701c870da7)
 
 
-### not gate 
+### Not gate 
 ![WhatsApp Image 2024-03-16 at 2 29 53 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/07c4b9a3-37c8-443a-9c5d-3b103aa06390)
 
-### and gate
+### And gate
 ![WhatsApp Image 2024-03-16 at 2 29 58 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/7529c1f2-a003-4e9e-8292-1a3db5492f6d)
 
 
-### nand gate
+### Nand gate
 ![WhatsApp Image 2024-03-16 at 2 29 58 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/3bf8dda8-7051-432e-a7fc-828709793850)
 
 
-### nor gate
+### Nor gate
 ![WhatsApp Image 2024-03-16 at 2 29 53 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/dc81d612-9380-42d7-85bf-ca342b989d76)
 
-### xnor gate
+### Xnor gate
 
 ![WhatsApp Image 2024-03-16 at 2 29 56 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/e417f3cb-a604-4ed0-8121-72b450634d87)
 
-### xor gate
+### Xor gate
 ![WhatsApp Image 2024-03-16 at 2 29 57 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/e41040ef-a314-4519-8810-ee1d1d16ec33)
 
 
 
-### half adder
+### Half adder
 ![WhatsApp Image 2024-03-16 at 2 29 54 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/e5d6a25e-29d3-4a01-bfc8-cd357f8f602a)
 
 
-### half subractor
+### Half subractor
 ![WhatsApp Image 2024-03-16 at 2 30 02 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/4076f4a5-bb76-4b15-adfa-08297419da6f)
 
 
-### full adder
+### Full adder
 ![WhatsApp Image 2024-03-16 at 2 30 02 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/28c49453-cfc3-4d91-b3b1-5b31ef431325)
 
 
-### full subractor
+### Full subractor
 ![WhatsApp Image 2024-03-16 at 2 29 54 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/4fe3f468-d4ba-4c14-8b6c-6d1afa01294c)
 
 
-### ripple carry adder
+### Ripple carry adder
 ![WhatsApp Image 2024-03-16 at 2 29 55 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/0b646151-9904-41d3-8396-40ac70a2d750)
 
 
