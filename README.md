@@ -1,3 +1,4 @@
+# VLSI-LAB-EXPERIMENTS
 ## AIM:
 To simulate and synthesis Logic Gates,Adders and Subtractor using Xilinx ISE.
 
@@ -35,7 +36,7 @@ STEP:1 Start the Xilinx navigator, Select and Name the New project. STEP:2 Selec
 
 
 
-### 8 Bit Ripple Carry Adder
+### 8 Bit Ripple Carry Adder:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/7385a408-40a5-4203-8050-b72818622d79)
 
@@ -57,7 +58,7 @@ xnor(xnorgate,a,b);
 not(notgate,a);
 endmodule
 ```
-### Half Adder :
+### Half Adder:
 ```
 module halfadder(a,b,sum,carry);
 input a,b;
@@ -66,7 +67,7 @@ xor g1(sum,a,b);
 and g2(carry,a,b);
 endmodule
 ```
-### Half Subractor :
+### Half Subractor:
 ```
 module halfsubtractor(a,b,diff,borrow);
 input a,b;
@@ -75,7 +76,7 @@ xor g1(diff,a,b);
 and g2(borrow,~a,b);
 endmodule
 ```
-### Full Adder :
+### Full Adder:
 ```
 module fadd(a,b,c,sum,carry);
 input a,b,c;
@@ -88,7 +89,7 @@ and g4(w3,w1,c);
 or g5(carry,w3,w2);
 endmodule
 ```
-### Full Subtractor :
+### Full Subtractor:
 ```
 module fs(a,b,bin,d,bout);
 input a,b,bin; 
@@ -101,7 +102,7 @@ and g4(w3,~b,bin);
 or g5(bout,w2,w3);
 endmodule
 ```
-### 8 bit ripple carry adder :
+### 8 bit ripple carry adder:
 ```
 module ripplemod(a, b, cin, sum, cout);
 input [07:0] a;
@@ -130,57 +131,44 @@ assign cout=((a&b)|(b&cin)|(a&cin));
 endmodule
 ```
 ## OUTPUT:
-## Logic Gates
-### Or gate
+## Logic Gates:
+### Or Gate:
 ![WhatsApp Image 2024-03-16 at 2 29 56 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/36d284bf-34f7-4e8a-9ca0-49701c870da7)
 
-
-### Not gate 
+### Not Gate:
 ![WhatsApp Image 2024-03-16 at 2 29 53 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/07c4b9a3-37c8-443a-9c5d-3b103aa06390)
 
-### And gate
+### And Gate:
 ![WhatsApp Image 2024-03-16 at 2 29 58 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/7529c1f2-a003-4e9e-8292-1a3db5492f6d)
 
-
-### Nand gate
+### Nand Gate
 ![WhatsApp Image 2024-03-16 at 2 29 58 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/3bf8dda8-7051-432e-a7fc-828709793850)
 
-
-### Nor gate
+### Nor Gate:
 ![WhatsApp Image 2024-03-16 at 2 29 53 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/dc81d612-9380-42d7-85bf-ca342b989d76)
 
-### Xnor gate
-
+### Xnor Gate:
 ![WhatsApp Image 2024-03-16 at 2 29 56 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/e417f3cb-a604-4ed0-8121-72b450634d87)
 
-### Xor gate
+### Xor Gate:
 ![WhatsApp Image 2024-03-16 at 2 29 57 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/e41040ef-a314-4519-8810-ee1d1d16ec33)
 
-
-
-### Half adder
+### Half Adder:
 ![WhatsApp Image 2024-03-16 at 2 29 54 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/e5d6a25e-29d3-4a01-bfc8-cd357f8f602a)
 
-
-### Half subractor
+### Half Subractor:
 ![WhatsApp Image 2024-03-16 at 2 30 02 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/4076f4a5-bb76-4b15-adfa-08297419da6f)
 
-
-### Full adder
+### Full Adder:
 ![WhatsApp Image 2024-03-16 at 2 30 02 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/28c49453-cfc3-4d91-b3b1-5b31ef431325)
 
-
-### Full subractor
+### Full Subractor:
 ![WhatsApp Image 2024-03-16 at 2 29 54 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/4fe3f468-d4ba-4c14-8b6c-6d1afa01294c)
 
-
-### Ripple carry adder
+### Ripple Carry Adder
 ![WhatsApp Image 2024-03-16 at 2 29 55 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/0b646151-9904-41d3-8396-40ac70a2d750)
 
 
-
-
-
 ## RESULT:
-Hence all experiments are proved.
+ Hence Logic Gates,Adders and Subtractor are simulated and synthesised using Xilinx ISE.
 
