@@ -1,4 +1,4 @@
-# VLSI-LAB-EXPERIMENTS
+# SIMULATION AND IMPLEMENTATION OF LOGIC GATES,ADDERS AND SUBTRACTOR 
 ## AIM:
 To simulate and synthesis Logic Gates,Adders and Subtractor using Xilinx ISE.
 
@@ -8,43 +8,12 @@ Xilinx 14.7 Spartan6 FPGA
 ## PROCEDURE: 
 STEP:1 Start the Xilinx navigator, Select and Name the New project. STEP:2 Select the device family, device, package and speed. STEP:3 Select new source in the New Project and select Verilog Module as the Source type. STEP:4 Type the File Name and Click Next and then finish button. Type the code and save it. STEP:5 Select the Behavioral Simulation in the Source Window and click the check syntax. STEP:6 Click the simulation to simulate the program and give the inputs and verify the outputs as per the truth table. STEP:7 Select the Implementation in the Sources Window and select the required file in the Processes Window. STEP:8 Select Check Syntax from the Synthesize XST Process. Double Click in the Floorplan Area/IO/Logic-Post Synthesis process in the User Constraints process group. UCF(User constraint File) is obtained. STEP:9 In the Design Object List Window, enter the pin location for each pin in the Loc column Select save from the File menu. STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here. STEP:12 Load the Bit file into the SPARTAN 6 FPGA STEP:11 On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
-## Logic Diagram :
 
-### Logic Gates:
+## Logic Gates:
+### Logic Diagram :
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/ee17970c-3ac9-4603-881b-88e2825f41a4)
 
-
-### Half Adder:
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/0e1ecb96-0c25-4556-832b-aeeedfdfe7b9)
-
-
-### Full adder:
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/9bb3964c-438f-469d-a3de-c1cca6f323fb)
-
-
-### Half Subtractor:
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/731470b7-eb4e-49f8-8bb7-2994052a7184)
-
-
-
-### Full Subtractor:
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/d66f874b-c1f2-44b3-a035-7149b56430c1)
-
-
-
-### 8 Bit Ripple Carry Adder:
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/7385a408-40a5-4203-8050-b72818622d79)
-
-
-
-## VERILOG CODE:
-
-### Logic Gates:
+### VERILOG CODE:
 ```
 module logicgate (a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
 input a,b;  
@@ -58,7 +27,16 @@ xnor(xnorgate,a,b);
 not(notgate,a);
 endmodule
 ```
+
+### OUTPUT WAVEFORM:
+![image](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/b06bb643-591f-418c-bae7-6654d045421d)
+
 ### Half Adder:
+
+### Logic Diagram :
+![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/0e1ecb96-0c25-4556-832b-aeeedfdfe7b9)
+
+### VERILOG CODE:
 ```
 module halfadder(a,b,sum,carry);
 input a,b;
@@ -67,7 +45,16 @@ xor g1(sum,a,b);
 and g2(carry,a,b);
 endmodule
 ```
-### Half Subractor:
+
+### OUTPUT WAVEFORM:
+![WhatsApp Image 2024-03-16 at 2 29 54 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/e5d6a25e-29d3-4a01-bfc8-cd357f8f602a)
+
+### Half Subtractor:
+
+### Logic Diagram :
+![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/731470b7-eb4e-49f8-8bb7-2994052a7184)
+
+### VERILOG CODE:
 ```
 module halfsubtractor(a,b,diff,borrow);
 input a,b;
@@ -76,7 +63,16 @@ xor g1(diff,a,b);
 and g2(borrow,~a,b);
 endmodule
 ```
-### Full Adder:
+
+### OUTPUT WAVEFORM:
+![WhatsApp Image 2024-03-16 at 2 30 02 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/4076f4a5-bb76-4b15-adfa-08297419da6f)
+
+## Full adder:
+
+### Logic Diagram :
+![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/9bb3964c-438f-469d-a3de-c1cca6f323fb)
+
+### VERILOG CODE:
 ```
 module fadd(a,b,c,sum,carry);
 input a,b,c;
@@ -89,7 +85,16 @@ and g4(w3,w1,c);
 or g5(carry,w3,w2);
 endmodule
 ```
-### Full Subtractor:
+
+### OUTPUT WAVEFORM:
+![WhatsApp Image 2024-03-16 at 2 30 02 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/28c49453-cfc3-4d91-b3b1-5b31ef431325)
+
+## Full Subtractor:
+
+### Logic Diagram :
+![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/d66f874b-c1f2-44b3-a035-7149b56430c1)
+
+### VERILOG CODE:
 ```
 module fs(a,b,bin,d,bout);
 input a,b,bin; 
@@ -102,7 +107,17 @@ and g4(w3,~b,bin);
 or g5(bout,w2,w3);
 endmodule
 ```
-### 8 bit ripple carry adder:
+
+### OUTPUT WAVEFORM:
+![WhatsApp Image 2024-03-16 at 2 29 54 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/4fe3f468-d4ba-4c14-8b6c-6d1afa01294c)
+
+
+## 8 Bit Ripple Carry Adder:
+
+### Logic Diagram :
+![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/7385a408-40a5-4203-8050-b72818622d79)
+
+### VERILOG CODE:
 ```
 module ripplemod(a, b, cin, sum, cout);
 input [07:0] a;
@@ -130,44 +145,9 @@ assign sum=(a^b^cin);
 assign cout=((a&b)|(b&cin)|(a&cin));
 endmodule
 ```
-## OUTPUT:
-## Logic Gates:
-### Or Gate:
-![WhatsApp Image 2024-03-16 at 2 29 56 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/36d284bf-34f7-4e8a-9ca0-49701c870da7)
 
-### Not Gate:
-![WhatsApp Image 2024-03-16 at 2 29 53 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/07c4b9a3-37c8-443a-9c5d-3b103aa06390)
-
-### And Gate:
-![WhatsApp Image 2024-03-16 at 2 29 58 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/7529c1f2-a003-4e9e-8292-1a3db5492f6d)
-
-### Nand Gate
-![WhatsApp Image 2024-03-16 at 2 29 58 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/3bf8dda8-7051-432e-a7fc-828709793850)
-
-### Nor Gate:
-![WhatsApp Image 2024-03-16 at 2 29 53 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/dc81d612-9380-42d7-85bf-ca342b989d76)
-
-### Xnor Gate:
-![WhatsApp Image 2024-03-16 at 2 29 56 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/e417f3cb-a604-4ed0-8121-72b450634d87)
-
-### Xor Gate:
-![WhatsApp Image 2024-03-16 at 2 29 57 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/e41040ef-a314-4519-8810-ee1d1d16ec33)
-
-### Half Adder:
-![WhatsApp Image 2024-03-16 at 2 29 54 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/e5d6a25e-29d3-4a01-bfc8-cd357f8f602a)
-
-### Half Subractor:
-![WhatsApp Image 2024-03-16 at 2 30 02 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/4076f4a5-bb76-4b15-adfa-08297419da6f)
-
-### Full Adder:
-![WhatsApp Image 2024-03-16 at 2 30 02 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/28c49453-cfc3-4d91-b3b1-5b31ef431325)
-
-### Full Subractor:
-![WhatsApp Image 2024-03-16 at 2 29 54 PM (1)](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/4fe3f468-d4ba-4c14-8b6c-6d1afa01294c)
-
-### Ripple Carry Adder
+### OUTPUT WAVEFORM:
 ![WhatsApp Image 2024-03-16 at 2 29 55 PM](https://github.com/DSVishal0407/VLSI-LAB-EXP-1/assets/163637297/0b646151-9904-41d3-8396-40ac70a2d750)
-
 
 ## RESULT:
  Hence Logic Gates,Adders and Subtractor are simulated and synthesised using Xilinx ISE.
